@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
+  
+  /* Animations */
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  /* Brand Colors */
+  --color-brand: #40843C;
+  --color-brand-light: #F2FFF2;
+  --color-brand-subtle: #D4E9D7;
+  --color-brand-pale: #DEFFDC;
+
+  /* Content Colors */
+  --color-content-primary: #121212;
+  --color-content-secondary: #4D4D4D;
+  --color-content-muted: #9CA3AF;
+  --color-content-inverse: #FFFFFF;
+
+  /* Surface Colors */
+  --color-surface: #FFFFFF;
+  --color-surface-page: #F9F9F9;
+  --color-surface-subtle: #EBEBEB;
+
+  /* Status Colors */
+  --color-status-error: #B70012;
+  --color-status-error-bright: #EF4444;
+  --color-status-error-bg: #FFE1E4;
+  --color-status-warning: #c2410c;
+  --color-status-warning-bg: #FFEEDC;
+  --color-status-info-bg: #E6F3FF;
+  --color-status-info-text: #CFE2F3;
+  --color-status-purple-bg: #EDE3FF;
+  --color-status-purple-alt: #E9DCFF;
+
+  /* Legacy Colors */
+  --color-primary: #030014;
+  --color-secondary: #151312;
+  --color-accent: #AB8BFF;
+  --color-light-100: #D6C7FF;
+  --color-light-200: #A8B5DB;
+  --color-light-300: #9CA4AB;
+  --color-dark-100: #221F3D;
+  --color-dark-200: #0F0D23;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-page text-content-primary font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}

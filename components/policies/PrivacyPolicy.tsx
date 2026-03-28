@@ -94,7 +94,7 @@ export const PrivacyPolicy = () => (
       <ul className="list-disc pl-5 space-y-2">
         <li>Disable location permissions in device settings</li>
         <li>Request access to or correction of your personal information by contacting <a href="https://mail.google.com/mail/?view=cm&to=Info@maplebridgesolutions.ca" target="_blank" rel="noopener noreferrer" className="text-brand font-medium">Info@maplebridgesolutions.ca</a></li>
-        <li><strong>Delete your account</strong> at any time through the App's account settings or by emailing <a href="https://mail.google.com/mail/?view=cm&to=Info@maplebridgesolutions.ca" target="_blank" rel="noopener noreferrer" className="text-brand font-medium">Info@maplebridgesolutions.ca</a>. Account deletion is subject to the following:
+        <li id="account-deletion"><strong>Delete your account</strong> at any time through the App's account settings or by emailing <a href="https://mail.google.com/mail/?view=cm&to=Info@maplebridgesolutions.ca" target="_blank" rel="noopener noreferrer" className="text-brand font-medium">Info@maplebridgesolutions.ca</a>. Account deletion is subject to the following:
           <ul className="list-disc pl-5 mt-2 space-y-1">
             <li>Any remaining wallet balance will be forfeited and is non-refundable unless otherwise required by law</li>
             <li>Unactivated tickets will also be forfeited upon deletion</li>

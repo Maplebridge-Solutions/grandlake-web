@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { TermsAndConditions as TermsContent } from "@/components/Policies";
+import { TermsAndConditions as TermsContent } from "@/components/policies/TermsAndConditions";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",

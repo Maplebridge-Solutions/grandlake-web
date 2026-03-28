@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { WalletPolicy as WalletContent } from "@/components/Policies";
+import { WalletPolicy as WalletContent } from "@/components/policies/WalletPolicy";
 
 export const metadata: Metadata = {
   title: "Wallet & Refund Policy",

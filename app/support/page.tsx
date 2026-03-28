@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Support as SupportContent } from "@/components/Policies";
+import { Support as SupportContent } from "@/components/policies/Support";
 
 export const metadata: Metadata = {
   title: "Support",

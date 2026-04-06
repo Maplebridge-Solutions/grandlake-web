@@ -4,9 +4,8 @@ import { motion, useReducedMotion } from "motion/react";
 import { Bus } from "lucide-react";
 import Image from "next/image";
 import {
-  AppleIcon,
-  GooglePlayIcon,
-  DownloadButtonLarge,
+  AppStoreBadge,
+  GooglePlayBadge,
 } from "@/components/HomeComponents";
 
 export const HeroSection = () => {
@@ -44,17 +43,9 @@ export const HeroSection = () => {
               Everything you need for a better commute, right in your pocket.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <DownloadButtonLarge
-                icon={<AppleIcon />}
-                platform="App Store"
-                className="bg-black text-white"
-              />
-              <DownloadButtonLarge
-                icon={<GooglePlayIcon />}
-                platform="Google Play"
-                className="bg-brand text-white"
-              />
+            <div className="flex flex-wrap gap-4 items-center">
+              <AppStoreBadge href="https://apps.apple.com/us/app/glktransit/id6760796005" />
+              <GooglePlayBadge href="#" />
             </div>
           </motion.div>
 
